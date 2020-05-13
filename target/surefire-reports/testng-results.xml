@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-24T06:42:00Z" name="Suite" finished-at="2020-03-24T06:44:04Z" duration-ms="123360">
+    <groups>
+    </groups>
+    <test started-at="2020-03-24T06:42:00Z" name="Test" finished-at="2020-03-24T06:44:04Z" duration-ms="123360">
+      <class name="demo.PracticeProject.OtherPractice">
+        <test-method signature="loginPage(java.lang.String, java.lang.String, java.lang.Object)[pri:0, instance:demo.PracticeProject.OtherPractice@614ca7df]" started-at="2020-03-24T12:12:00Z" name="loginPage" data-provider="logins" finished-at="2020-03-24T12:12:57Z" duration-ms="56353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bsreenivasu@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sreedevi@153]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nonRestrictedUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method signature="loginPage(java.lang.String, java.lang.String, java.lang.Object)[pri:0, instance:demo.PracticeProject.OtherPractice@614ca7df]" started-at="2020-03-24T12:12:57Z" name="loginPage" data-provider="logins" finished-at="2020-03-24T12:13:33Z" duration-ms="36747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suresh@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[RestrictedUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method signature="loginPage(java.lang.String, java.lang.String, java.lang.Object)[pri:0, instance:demo.PracticeProject.OtherPractice@614ca7df]" started-at="2020-03-24T12:13:33Z" name="loginPage" data-provider="logins" finished-at="2020-03-24T12:14:04Z" duration-ms="30225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sreedevi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[RestrictedUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+      </class> <!-- demo.PracticeProject.OtherPractice -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
