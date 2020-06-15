@@ -1,63 +1,38 @@
 package JavaPractice;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestAll {
 
-	public void ReverseString() {
-
-		Scanner input = new Scanner(System.in);
-
-		System.out.println("ENter a String : ");
-
-		String getinput = input.next();
-
-		String rev = "";
-
-		int len = getinput.length();
-		for (int i = len - 1; i >= 0; i--) {
-
-			rev = rev + getinput.charAt(i);
-
-		}
-
-		System.out.println("Reverse of String is ::" + rev);
-		
-		StringBuffer stb = new StringBuffer(rev);
-		System.out.println("Reverse String in String Buffer is ::" + stb.reverse());
-	}
-	
-	public void reverseInteger() {
-		
-		Scanner inputInt = new Scanner(System.in);
-		System.out.println("Enter a interger value to reverse: ");
-		int num = inputInt.nextInt();
-		
-		
-		int Rev = 0;
-		while (num != 0) {
+		public void findLongAndShortString(List<String> list) {
 			
-			Rev = Rev * 10 + num % 10;
-			num = num / 10;
+		int smallest = list.get(0).length();
+		int longest = list.get(0).length();
+		int shortindex = 0;
+		int longindex = 0;
+		
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i).length() < smallest) {
+				smallest = list.get(i).length();
+				shortindex = i;
+			}
 		}
 		
-		System.out.println("String Reverse is :: " + Rev);
+		System.out.println("<<<<< ----------------->>>>");
+		System.out.println("Smallest String is :: " + list.get(shortindex));
+		list.remove(shortindex);
 		
-		//StringBuffer stb = new StringBuffer(num);
-		
-		System.out.println(new StringBuffer(String.valueOf(Rev)).reverse());
-	//	System.out.println(new StringBuffer(String.valueOf(num1)).reverse());
-		
+		for (int j = 0; j < list.size(); j++) {
+				if (list.get(j).length() > longest) {
+					longest = list.get(j).length();
+					longindex = j;
+				}
+			}
+		System.out.println("Longestt String is :: " + list.get(longindex));
+		System.out.println("<<<<< ----------------->>>>");
+		list.remove(longindex);
 	
-		
+		System.out.println("List of Elements after removal---->>> "+ list);
+		}
 	}
-
-	public static void main(String[] args) {
-
-		TestAll ta = new TestAll();
-		ta.ReverseString();
-	//	ta.reverseInteger();
-
-	}
-
-}

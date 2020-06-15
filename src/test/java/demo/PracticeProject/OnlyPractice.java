@@ -128,40 +128,15 @@ public void TextFileReader() throws IOException {
 //	sc.close();
 //}
 
-HashMap<Integer,String> hm = new HashMap<Integer,String>();
-hm.put(1,"Sree");
-hm.put(2,"Devi");
-hm.put(1,"partu");
+Properties prop = new Properties();
+FileInputStream fis = new FileInputStream("F:\\txtreaderfile.txt");
+prop.load(fis);
+String urlValue = prop.getProperty("url");
+System.out.println(urlValue);
 
-System.out.println(hm.size());
-for(Map.Entry m : hm.entrySet()) {
-	System.out.println(m.getKey() +"     "+m.getValue());
+	
+
 }
-
-
-
-	
-	
-	
-	
-	
-}
-
-
-
-
-
-	
-	
-	
-
- 
- 
-	
-	
-
-	
-	
 	
 	public static void main(String[] args) throws IOException {
 		OnlyPractice op = new OnlyPractice();

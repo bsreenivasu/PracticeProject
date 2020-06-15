@@ -6,18 +6,23 @@ import org.testng.annotations.Test;
 
 public class AppTest {
 @Test
-public void febonacciSeries() {
-Scanner num = new Scanner(System.in);
-System.out.println("ENter a number : : ");
-int input = num.nextInt();
+public void primeNumbers() {
+		int num = 100;
+		int temp = 0;
+		for(int i=1;i<=num;i++) {
+			for(int j=2;j<=i-1;j++) {
+					if(i%j==0) {
+						temp = temp + 1;
+					}
+			}
+					if (temp == 0) {
+					System.out.println(i + "is Prime Number");
+				}
+				else {
+					temp = 0;
+				}
+			}
+		
+		}
 
-int num1=0, num2=1;
-for (int i = 1; i<= input; i++) {
-	System.out.println(num1);
-	int total = num1+num2;
-	num1=num2;
-	num2=total;
-	
-}
-}
 }
