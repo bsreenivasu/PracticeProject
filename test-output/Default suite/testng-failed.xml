@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demo.PracticeProject.OtherPractice">
+      <class name="demo.PracticeProject.MouseHover">
         <methods>
-          <include name="loginPage" invocation-numbers="0 1 2"/>
+          <include name="ExecuteAutomation"/>
         </methods>
-      </class> <!-- demo.PracticeProject.OtherPractice -->
+      </class> <!-- demo.PracticeProject.MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

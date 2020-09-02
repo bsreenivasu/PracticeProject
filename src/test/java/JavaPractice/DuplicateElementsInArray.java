@@ -1,4 +1,5 @@
 package JavaPractice;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,32 +18,25 @@ import org.testng.ITestResult;
 public class DuplicateElementsInArray {
 
 	public static void main(String[] args) throws FileNotFoundException {
-			Integer[] arr = {2,5,3,2,5,2,3,2,5,9};
-			Map<Integer,Integer> hm = new HashMap<Integer,Integer>();
-			for(int i:arr) 
-			{
-				Integer count = hm.get(i);
-				if(count == null) 
-				{
-					hm.put(i, 1);
-				}
-				else
-				{
-					count = count+1;
-					hm.put(i, count);
-				}
-				
+		Integer[] arr = { 2, 5, 3, 2, 5, 2, 3, 2, 5, 9 };
+		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+		for (int i : arr) {
+			Integer count = hm.get(i);
+			if (count == null) {
+				hm.put(i, 1);
+			} else {
+				count = count + 1;
+				hm.put(i, count);
 			}
-			System.out.println("Duplicate Elements are :: ");
-			Set<Map.Entry<Integer, Integer>> es = hm.entrySet();
-			for(Map.Entry<Integer, Integer> me:es) {
-				if(me.getValue() > 1) {
-					System.out.print(me.getKey()+ " ");
-					
-				}
-			}
-			}
-		
-		}
-	
 
+		}
+		System.out.println("Duplicate Elements are :: ");
+		for (Entry<Integer, Integer> me : hm.entrySet()) {
+			if (me.getValue() > 1) {
+				System.out.print(me.getKey() + " ");
+
+			}
+		}
+	}
+
+}

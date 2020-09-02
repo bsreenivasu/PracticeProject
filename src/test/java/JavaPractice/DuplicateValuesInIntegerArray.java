@@ -6,7 +6,7 @@ public class DuplicateValuesInIntegerArray {
 
 		public static void main(String[] args) {
 			
-			int[] names = {2,4,2,8,9,3,4};
+			int[] names = {2,4,2,8,9,3,4,7,9};
 			
 			HashSet<Integer> store = new HashSet<Integer>();
 			for (int name : names) {

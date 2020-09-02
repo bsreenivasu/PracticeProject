@@ -1,29 +1,27 @@
 package JavaPractice;
-
 import org.apache.commons.lang3.StringUtils;
+import org.testng.annotations.Test;
 
 public class ReverseWordsInString {
 
-public static void main(String[] args) {
+	@Test
+	public void wordsReverseInString() {
+	String str="APPLE RIDGE APARTMENT";
+	String[]  words = str.split(" ");
+	String RevStr = "";
+	for(int i = 0; i < words.length; i++) {
+			String word = words[i];
+			String revWord="";
+			
+			for (int j=word.length()-1; j>=0;j--){
+				revWord = revWord + word.charAt(j);
+			}
+			
+			RevStr = RevStr + revWord + " ";
+			
+	}
+			System.out.println(RevStr);
+		
+	}
 
-	String blogName = "HCL TECHNOLOGIES LIMITED";
-
-
-//String reverseString = StringUtils.reverseDelimited(StringUtils.reverse(blogName),' ');
-//String reverseString1 = StringUtils.reverseDelimited(StringUtils.reverse("HCL TECHNOLOGIES LIMITED"),' ');
-String reverseString2 = StringUtils.reverseDelimited(StringUtils.reverse(blogName), ' ');
-
-String reverseString3 = StringUtils.reverseDelimited(blogName, ' ');
-
-/*
- 	
-
-		 * String reverseString = StringUtils.reverseDelimited(
-		 * StringUtils.reverse(blogName), ' ' ); StringUtils.reverseDelimited(str,
-		 * separatorChar)
-		 *
-
- */
-System.out.println( reverseString2 );
-}
 }
